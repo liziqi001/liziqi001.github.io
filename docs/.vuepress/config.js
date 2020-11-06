@@ -68,6 +68,7 @@ module.exports = {
                 'tree',
                 'loading',
                 'DatePicker',
+                'tooltip',
                 'icon',
                 'image',
                 'message',
