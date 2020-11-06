@@ -8,6 +8,14 @@ module.exports = {
         '@vuepress/last-updated'
     ],
     themeConfig: {
+        locales: {
+            '/': {
+              lang: 'zh-CN', 
+            }
+          },
+          themeConfig: {
+            lastUpdated: '上次更新',
+          },
         sidebarDepth: 2,
         displayAllHeaders: true,//展开所有菜单
         nav : [//顶部导航
