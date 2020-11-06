@@ -7,15 +7,23 @@ module.exports = {
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated'
     ],
-    editLinks: true,
-    editLinkText: '在 GitHub 上编辑此页 ',
     locales: {
         '/': {
           lang: 'zh-CN', 
         }
       },
     themeConfig: {
+        repo: 'liziqi001/liziqi001.github.io',
+        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        repoLabel: '查看源码',
+        // 假如文档放在一个特定的分支下：
+        docsBranch: 'master',
+        editLinks: true,
+        editLinkText: '在 GitHub 上编辑此页 ',
+        
         lastUpdated: '上次更新',
+        
         sidebarDepth: 2,
         displayAllHeaders: true,//展开所有菜单
         nav : [//顶部导航
