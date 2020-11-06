@@ -7,15 +7,13 @@ module.exports = {
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated'
     ],
+    locales: {
+        '/': {
+          lang: 'zh-CN', 
+        }
+      },
     themeConfig: {
-        locales: {
-            '/': {
-              lang: 'zh-CN', 
-            }
-          },
-          themeConfig: {
-            lastUpdated: '上次更新',
-          },
+        lastUpdated: '上次更新',
         sidebarDepth: 2,
         displayAllHeaders: true,//展开所有菜单
         nav : [//顶部导航
