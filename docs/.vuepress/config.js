@@ -7,6 +7,8 @@ module.exports = {
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated'
     ],
+    editLinks: true,
+    editLinkText: '在 GitHub 上编辑此页 '
     locales: {
         '/': {
           lang: 'zh-CN', 
