@@ -17,5 +17,15 @@ this.$nextTick(()=>{
     ref="tree">
 </el-tree>
 ```
-## tree
-改变hover样式 https://blog.csdn.net/wxfdpp/article/details/83624460
+## 改变hover样式 
+https://blog.csdn.net/wxfdpp/article/details/83624460
+## 加载树形数据loading效果
+``` html
+<el-tree
+    v-loading="loading" 
+    :empty-text="loading?'':'暂无数据'"
+    element-loading-text="拼命加载中"
+    element-loading-spinner="el-icon-loading"
+    element-loading-background="rgba(255, 255, 255, 0.4)">
+</el-tree>
+```
