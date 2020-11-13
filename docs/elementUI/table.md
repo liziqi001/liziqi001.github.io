@@ -50,9 +50,12 @@ show-overflow-tooltip
 ```
 ## 先显示暂无数据 之后再加载数据 问题
 ``` html
-<el-table v-loading="loading" element-loading-text="拼命加载中"
+<el-table 
+  v-loading="loading" 
+<!--   element-loading-text="拼命加载中"
   element-loading-spinner="el-icon-loading" 
-  element-loading-background="rgba(255, 255, 255, 0.4)">
+  element-loading-background="rgba(255, 255, 255, 0.4)" -->
+>
 	<template slot="empty"> 
 		<div v-if="loading"> </div> 
 		<div v-else> 暂无数据 </div>
