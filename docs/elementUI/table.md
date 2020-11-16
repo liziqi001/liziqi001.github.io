@@ -15,9 +15,10 @@ title: table
 </el-table-column>
 ```
 ## 排序
+### 表格数据排序
 ``` js
 //https://www.cnblogs.com/steamed-twisted-roll/p/11069821.html
-//:sortable="true"  :sort-method="(a,b) => sort(a ,b , 'money')"
+//<el-table-column :sortable="true"  :sort-method="(a,b) => sort(a ,b , 'money')">
 sort(obj1, obj2, column){
     var at = Number(obj1[column])
 　　var bt = Number(obj2[column])
@@ -28,6 +29,30 @@ sort(obj1, obj2, column){
 　　} else {
     　　return -1
 　　}
+},
+```
+### 监听排序方式
+``` js
+// <el-table @sort-change="sortChange"> 
+//     <el-table-column prop="prescCount" label="处方数量" sortable="custom" >
+sortChange(val){
+	console.log(val)
+	let {prop,order}=val
+	let myOrder=order=='ascending'?1:0
+	if(prop=='prescCount'){
+	    this.prescCountSort=myOrder
+	    this.medicineCountSort=''
+	    this.moneySort=''
+	}else if(prop=='medicineCount'){
+	    this.medicineCountSort=myOrder
+	    this.prescCountSort=''
+	    this.moneySort=''
+	}else{
+	    this.moneySort=myOrder
+	    this.prescCountSort=''
+	    this.medicineCountSort=''
+	}
+	this.search(1)
 },
 ```
 ##  内容过多显示tip
