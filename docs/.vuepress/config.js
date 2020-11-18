@@ -43,10 +43,12 @@ module.exports = {
                             { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' }
                         ] 
                     },
-                    // { 
-                    //     text: 'mobile', 
-                    //     items: [{}] 
-                    // },
+                    { 
+                        text: 'mobile', 
+                        items: [
+                            {text:'Mint UI', link:'http://mint-ui.github.io/#!/zh-cn'}
+                        ] 
+                    },
                 ]
             }
             
