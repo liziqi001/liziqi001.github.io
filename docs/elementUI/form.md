@@ -47,3 +47,4 @@ this.$refs['storeForm'].validate((valid) => {
     }
 })
 ```
+外层rules和内部标签rule 验证叠加
