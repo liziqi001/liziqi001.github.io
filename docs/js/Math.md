@@ -6,8 +6,8 @@ title: Math
 ## 算术
 ### 次方
 ``` js 
-//3的4*5次方
-var a =Math.pow(3,4*5)
+//3的2次方
+var a =Math.pow(3,2)//9
 ```
 ### 随机数
 ``` js 
