@@ -2,16 +2,16 @@ module.exports = {
     title: '前端代码块',
     description: 'Just playing around',
     // theme: '@vuepress/theme-xxx',
-    base:'/',
+    base: '/',
     plugins: [
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated'
     ],
     locales: {
         '/': {
-          lang: 'zh-CN', 
+            lang: 'zh-CN',
         }
-      },
+    },
     themeConfig: {
         repo: 'liziqi001/liziqi001.github.io',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
@@ -23,37 +23,36 @@ module.exports = {
         docsBranch: 'master',
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页 ',
-        
+
         lastUpdated: '上次更新',
-        
+
         sidebarDepth: 2,
-        displayAllHeaders: true,//展开所有菜单
-        nav : [//顶部导航
+        displayAllHeaders: true, //展开所有菜单
+        nav: [ //顶部导航
             { text: 'elementUI', link: '/elementUI/' },
             { text: 'vue', link: '/vue/' },
             { text: 'js', link: '/js/' },
             { text: 'html', link: '/html/' },
             {
                 text: '官方ui文档',
-                items: [
-                    { 
-                        text: 'pc', 
+                items: [{
+                        text: 'pc',
                         items: [
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
                             { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' }
-                        ] 
+                        ]
                     },
-                    { 
-                        text: 'mobile', 
+                    {
+                        text: 'mobile',
                         items: [
-                            {text:'Mint UI', link:'http://mint-ui.github.io/#!/zh-cn'}
-                        ] 
+                            { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' }
+                        ]
                     },
                 ]
             }
-            
+
         ],
-        sidebar:{//侧边栏
+        sidebar: { //侧边栏
             // {
             //     title: 'elementUI',   // 必要的
             //     path: '/elementUI/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
@@ -78,7 +77,7 @@ module.exports = {
             //       "/vue/template模板",
             //     ]
             // },
-            '/elementUI/':[
+            '/elementUI/': [
                 '/',
                 'table',
                 'form',
@@ -89,13 +88,14 @@ module.exports = {
                 'loading',
                 'DatePicker',
                 'tooltip',
+                'popover',
                 'icon',
                 'image',
                 'message',
                 'MessageBox',
                 'upload',
             ],
-            '/vue/':[
+            '/vue/': [
                 '/',
                 'axios',
                 'props',
@@ -103,19 +103,19 @@ module.exports = {
                 'router',
                 'template模板',
             ],
-            '/html/':[
+            '/html/': [
                 '/',
                 'table',
                 'document',
             ],
-            '/js/':[
+            '/js/': [
                 '/',
                 'Math',
             ],
             '/': [
-                '', 
-              ]
-            },
+                '',
+            ]
+        },
         // sidebar:'auto'
     }
 }
