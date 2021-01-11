@@ -33,6 +33,7 @@ module.exports = {
             { text: 'vue', link: '/vue/' },
             { text: 'js', link: '/js/' },
             { text: 'html', link: '/html/' },
+            { text: '实例', link: '/example/' },
             {
                 text: '官方ui文档',
                 items: [{
@@ -111,6 +112,10 @@ module.exports = {
             '/js/': [
                 '/',
                 'Math',
+            ],
+            '/example/': [
+                '/',
+                '基于vue',
             ],
             '/': [
                 '',

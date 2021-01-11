@@ -5,6 +5,7 @@ title: popover
 ## 实例
 ### 弹出二维码
 ![An image](../.vuepress/public/popover.png)
+
 ``` html 
 <el-popover
     placement="bottom"
