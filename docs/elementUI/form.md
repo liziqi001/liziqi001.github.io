@@ -2,18 +2,25 @@
 title: form 
 ---
 # 表单
-## 一般页面
+## 表单标签
+``` html 
+<el-form ref="storeForm" :model="storeDialogForm" :rules="ruleValidate_store" label-width="100px" size="mini">
+    <el-form-item label="活动名称" :rules="{}">
+	 <el-input v-model="form.name"></el-input>
+    </el-form-item>
+    <el-form-item label="活动区域">
+      <el-select v-model="form.region" placeholder="请选择活动区域">
+        <el-option label="区域二" value="beijing"></el-option>
+      </el-select>
+    </el-form-item>
+</el-form>
+```
+## 页面提交
 ``` html 
 <div style="margin-top:20px">
     <el-button type="primary" @click="submit">提交</el-button>
 	<el-button  @click="$router.go(-1)">取消</el-button>
 </div>
-```
-## 表单标签
-``` html 
-<el-form ref="storeForm" :model="storeDialogForm" :rules="ruleValidate_store" label-width="100px" size="mini">
-    <el-form-item :rules="{}"></el-form-item>
-</el-form>
 ```
 ## 清空
 ``` js 
