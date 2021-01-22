@@ -49,9 +49,12 @@ ruleValidate(){
 	    }
 	}
 }
+//校验整个表单
 this.$refs['storeForm'].validate((valid) => {
     if (valid) {
     }
 })
+//校验部分字段 以防止blur,change事件没有自动校验
+this.$refs['storeForm'].validateField('cover')//string|array
 ```
 外层rules和内部标签rule 验证叠加
