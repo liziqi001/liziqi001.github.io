@@ -99,7 +99,7 @@ title: 基于vue
 ![An image](../.vuepress/public/wxLogin.gif)
 ``` html 
 <wxlogin
-    appid="wx8aed26d0f7a71b64"
+    appid="xxxxxx"
     :scope="'snsapi_login'"
     :theme="'black'"
     :redirect_uri="encodeURIComponent(ucloud+'/login')"
