@@ -95,6 +95,7 @@ module.exports = {
                 'message',
                 'MessageBox',
                 'upload',
+                '其他技巧',
             ],
             '/vue/': [
                 '/',

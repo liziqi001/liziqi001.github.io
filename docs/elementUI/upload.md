@@ -2,7 +2,7 @@
 title: upload 
 ---
 # 上传
-## 单图上传
+## 单图手动上传
 ``` html
 <el-upload
     class="avatar-uploader"
@@ -12,7 +12,8 @@ title: upload
     :before-upload="beforeAvatarUpload"
     :http-request="uploadFile"
 >
-    <img :src="imgUrl?imgUrl:defalutImg" class="avatar" />
+     <img v-if="imgUrl" :src="imgUrl"  class="avatar"/>
+    <i v-else class="el-icon-plus avatar-uploader-icon"></i>
 </el-upload>
 <span class="uploadTip formText">建议上传图片尺寸为640*640，大小不超过1M，视觉元素保持在圆形区域内</span>
 ```
@@ -60,7 +61,34 @@ uploadFile(params){
     });
 },
 ```
-## 手动控制上传
+``` css
+.avatar-uploader {
+    /deep/.el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    /deep/.el-upload:hover {
+        border-color: #409EFF;
+    }
+    .avatar-uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 178px;
+        height: 178px;
+        line-height: 178px;
+        text-align: center;
+    }
+    .avatar {
+        width: 178px;
+        height: 178px;
+        display: block;
+    }
+}
+```
+## 多图上传
 手动上传时before-upload属性失效 file-list属性也不会自动更新 用on-change处理
 ``` html
 <el-upload
