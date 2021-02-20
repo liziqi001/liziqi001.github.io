@@ -10,7 +10,9 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "vuepress-plugin-comment": "^0.7.3"
+  },
   "dependencies": {
     "vuepress": "^1.6.0",
     "vuepress-plugin-code-copy": "^1.0.6"
