@@ -113,6 +113,7 @@ module.exports = {
             '/js/': [
                 '/',
                 'Math',
+                'Date',
             ],
             '/example/': [
                 '/',
