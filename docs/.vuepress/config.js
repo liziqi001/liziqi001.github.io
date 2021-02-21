@@ -17,7 +17,8 @@ module.exports = {
                     appKey: 'wiW4pV04wTcAC1bKApBxRdgC'
                 }
             }
-        ]
+        ],
+        "vuepress-plugin-auto-sidebar"
     ],
     locales: {
         '/': {
@@ -28,7 +29,7 @@ module.exports = {
         repo: 'liziqi001/liziqi001.github.io',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-        repoLabel: '查看源码',
+        repoLabel: '我的github',
         // 假如文档不是放在仓库的根目录下：
         docsDir: 'docs',
         // 假如文档放在一个特定的分支下：
@@ -46,21 +47,19 @@ module.exports = {
             { text: 'js', link: '/js/' },
             { text: 'html', link: '/html/' },
             { text: '实例', link: '/example/' },
+            { text: '我的项目', link: '/myProject.html' },
+            { text: '随笔', link: '/blog/' },
             {
-                text: '官方ui文档',
-                items: [{
-                        text: 'pc',
+                text: '官方文档',
+                items: [
+                    {
+                        text: 'ui库',
                         items: [
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
-                            { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' }
-                        ]
-                    },
-                    {
-                        text: 'mobile',
-                        items: [
+                            { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' },
                             { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' }
                         ]
-                    },
+                    }
                 ]
             }
 
@@ -90,50 +89,50 @@ module.exports = {
             //       "/vue/template模板",
             //     ]
             // },
-            '/elementUI/': [
-                '/',
-                'table',
-                'form',
-                'dialog',
-                'select',
-                'input',
-                'tree',
-                'loading',
-                'DatePicker',
-                'tooltip',
-                'popover',
-                'icon',
-                'image',
-                'message',
-                'MessageBox',
-                'upload',
-                '其他技巧',
-            ],
-            '/vue/': [
-                '/',
-                'axios',
-                'props',
-                'watch',
-                'router',
-                'template模板',
-            ],
-            '/html/': [
-                '/',
-                'table',
-                'document',
-            ],
-            '/js/': [
-                '/',
-                'Math',
-                'Date',
-            ],
-            '/example/': [
-                '/',
-                '基于vue',
-            ],
-            '/': [
-                '',
-            ]
+            // '/elementUI/': [
+            //     '/',
+            //     'table',
+            //     'form',
+            //     'dialog',
+            //     'select',
+            //     'input',
+            //     'tree',
+            //     'loading',
+            //     'DatePicker',
+            //     'tooltip',
+            //     'popover',
+            //     'icon',
+            //     'image',
+            //     'message',
+            //     'MessageBox',
+            //     'upload',
+            //     '其他技巧',
+            // ],
+            // '/vue/': [
+            //     '/',
+            //     'axios',
+            //     'props',
+            //     'watch',
+            //     'router',
+            //     'template模板',
+            // ],
+            // '/html/': [
+            //     '/',
+            //     'table',
+            //     'document',
+            // ],
+            // '/js/': [
+            //     '/',
+            //     'Math',
+            //     'Date',
+            // ],
+            // '/example/': [
+            //     '/',
+            //     '基于vue',
+            // ],
+            // '/': [
+            //     '',
+            // ]
         },
         // sidebar:'auto'
     }
