@@ -5,14 +5,15 @@ module.exports = {
     base: '/',
     head:[
         [
-            "script",{},`<script>
-            var _hmt = _hmt || [];
-            (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?78f0c2f523b872ed1a3055271d97df51";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-            })();
+            //或者 “script”,{},`var _hmt=...})();`
+            `<script>
+                var _hmt = _hmt || [];
+                (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?78f0c2f523b872ed1a3055271d97df51";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+                })();
             </script>`
         ]
     ],
@@ -42,7 +43,7 @@ module.exports = {
         repo: 'liziqi001/liziqi001.github.io',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-        repoLabel: '我的github',
+        repoLabel: 'github',
         // 假如文档不是放在仓库的根目录下：
         docsDir: 'docs',
         // 假如文档放在一个特定的分支下：
@@ -73,6 +74,15 @@ module.exports = {
                     }
                 ]
             }, 
+            { 
+                text: '本站维护', 
+                items:[
+                    {text:'百度统计',link: 'https://tongji.baidu.com/web/10000318855/overview/index?siteId=16281026'},
+                    {text:'评论数据',link: 'https://console.leancloud.cn/apps/ovEDOqPNCp4iOvSiffKTKH4v-gzGzoHsz/storage/data/Comment?tab=table&env=production'},
+                    {text:'自动部署',link: 'https://travis-ci.com/github/liziqi001/liziqi001.github.io'},
+                    {text:'接口平台',link: 'http://rap2.taobao.org'},
+                ]
+            },
             { 
                 text: '关于我', 
                 items:[
