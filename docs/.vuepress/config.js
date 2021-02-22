@@ -3,6 +3,18 @@ module.exports = {
     description: 'Just playing around',
     // theme: '@vuepress/theme-xxx',
     base: '/',
+    head:[
+        "script",{},`<script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?78f0c2f523b872ed1a3055271d97df51";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+        `
+    ],
     plugins: [
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated',
@@ -29,7 +41,7 @@ module.exports = {
         repo: 'liziqi001/liziqi001.github.io',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-        repoLabel: '我的github',
+        // repoLabel: '我的github',
         // 假如文档不是放在仓库的根目录下：
         docsDir: 'docs',
         // 假如文档放在一个特定的分支下：
@@ -47,8 +59,6 @@ module.exports = {
             { text: 'js', link: '/js/' },
             { text: 'html', link: '/html/' },
             { text: '实例', link: '/example/' },
-            { text: '我的项目', link: '/myProject.html' },
-            { text: '随笔', link: '/blog/' },
             {
                 text: '官方文档',
                 items: [
@@ -61,7 +71,16 @@ module.exports = {
                         ]
                     }
                 ]
-            }
+            }, 
+            { 
+                text: '关于我', 
+                items:[
+                    {text:'技术文章',link: '/blog/'},
+                    {text:'随笔',link: '/note/'},
+                    {text:'我的项目',link: '/myProject.html'},
+                    {text:'联系我',link: '/contactMe.html'},
+                ]
+            },
 
         ],
         sidebar: { //侧边栏

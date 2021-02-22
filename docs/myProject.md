@@ -12,6 +12,6 @@ http://jd0l1j.coding-pages.com/
 ### API在线接口管理
 ![An image](./.vuepress/public/myProject/api.png)
 http://9ufzc8.coding-pages.com/build/
-### JD商品趋势
+### JD商品趋势h5
 ![An image](./.vuepress/public/myProject/jd.png)
 http://6k02q0.coding-pages.com/build/
