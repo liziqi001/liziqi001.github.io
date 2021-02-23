@@ -1,5 +1,5 @@
 --- 
-title: DatePicker 
+title: datePicker 
 ---
 # 日期选择器
 ## 标签
