@@ -78,9 +78,13 @@ aTool主要包含有以下的功能
 <h5>h5标签</h5>
 </html>
 
+```` 
 ``` js
 import AppConfig from '@/configs'
-\```
-其他标记 css html md yaml
+```
+````
+
+用````包裹```代码块，其中语法会以文本显示
+语法高亮符```的其他标记 css html md yaml vue
 ```
 

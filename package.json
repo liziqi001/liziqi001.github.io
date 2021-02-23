@@ -11,10 +11,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "element-ui": "^2.15.1",
+    "less-loader": "^8.0.0",
     "vuepress-plugin-auto-sidebar": "^1.5.0",
     "vuepress-plugin-comment": "^0.7.3"
   },
   "dependencies": {
+    "async-validator": "1.11.5",
+    "core-js": "3.6.5",
+    "vue": "2.6.12",
     "vuepress": "^1.6.0",
     "vuepress-plugin-code-copy": "^1.0.6"
   }
