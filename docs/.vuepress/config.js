@@ -6,16 +6,15 @@ module.exports = {
     head:[
         ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }],
         [
-            //或者 “script”,{},`var _hmt=...})();`
-            `<script>
-                var _hmt = _hmt || [];
-                (function() {
+            //或者 `<script>var _hmt=...})();</script>`
+            'script',{},
+            `var _hmt = _hmt || [];
+            (function() {
                 var hm = document.createElement("script");
                 hm.src = "https://hm.baidu.com/hm.js?78f0c2f523b872ed1a3055271d97df51";
                 var s = document.getElementsByTagName("script")[0]; 
                 s.parentNode.insertBefore(hm, s);
-                })();
-            </script>`
+            })();`
         ]
     ],
     plugins: [
