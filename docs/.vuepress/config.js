@@ -4,6 +4,7 @@ module.exports = {
     // theme: '@vuepress/theme-xxx',
     base: '/',
     head:[
+        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }],
         [
             //或者 “script”,{},`var _hmt=...})();`
             `<script>
