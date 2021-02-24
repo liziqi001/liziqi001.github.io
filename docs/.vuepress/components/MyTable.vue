@@ -5,7 +5,7 @@
 <template>
     <div class="container">
         <div style="text-indent:0;">
-            <el-table :data="data" style="width: 100%" border stripe  max-height="520" >
+            <el-table :data="data" style="width: 100%" border max-height="520" >
                 <el-table-column type="index" label="序号" width="50" ></el-table-column>
                 <el-table-column v-for="(item,index) in props" :key="index" :prop="item.value" :label="item.label" align="center">
                     <template slot-scope="scope">

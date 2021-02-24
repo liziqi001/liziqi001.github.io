@@ -3,7 +3,7 @@ title: template模板
 ---
 # 组件模板 
 ## 基本的.vue代码结构
-``` html
+``` vue
 <style lang="scss" scoped>
 
 </style>
