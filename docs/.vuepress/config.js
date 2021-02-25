@@ -4,14 +4,14 @@ module.exports = {
     // theme: '@vuepress/theme-xxx',
     base: '/',
     head:[
-        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }],
+        ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./public/favicon.ico` }],
         [
             //或者 `<script>var _hmt=...})();</script>`
             'script',{},
             `var _hmt = _hmt || [];
             (function() {
                 var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?78f0c2f523b872ed1a3055271d97df51";
+                hm.src = "https://hm.baidu.com/hm.js?6a09acd2b178586b5d5989d71fd4a92c";
                 var s = document.getElementsByTagName("script")[0]; 
                 s.parentNode.insertBefore(hm, s);
             })();`
@@ -53,7 +53,7 @@ module.exports = {
 
         lastUpdated: '上次更新',
 
-        sidebarDepth: 2,
+        sidebarDepth: 3,
         displayAllHeaders: true, //展开所有菜单
         nav: [ //顶部导航
             { text: 'elementUI', link: '/elementUI/' },
@@ -61,6 +61,7 @@ module.exports = {
             { text: 'js', link: '/js/' },
             { text: 'html', link: '/html/' },
             { text: '实例', link: '/example/' },
+            { text: '数据集', link: '/dataSet/' },
             {
                 text: '官方文档',
                 items: [
@@ -74,6 +75,8 @@ module.exports = {
                     }
                 ]
             }, 
+            {text:'技术文章',link: '/blog/'},
+            {text:'随笔',link: '/note/'},
             { 
                 text: '本站维护', 
                 items:[
@@ -86,8 +89,6 @@ module.exports = {
             { 
                 text: '关于我', 
                 items:[
-                    {text:'技术文章',link: '/blog/'},
-                    {text:'随笔',link: '/note/'},
                     {text:'我的项目',link: '/myProject.html'},
                     {text:'联系我',link: '/contactMe.html'},
                 ]

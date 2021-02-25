@@ -50,3 +50,13 @@ Creative Commons（知识共享）简称CC协议素材，创作者主动放弃�
 CC0协议意味着创作者主动放弃了著作的所有权利，可以无条件使用包括商用。（但是，不可上传至其他素材网站、不可声称拥有版权，不可用于不法途径，图像中所涉及的内容仍有可能涉及商标权和公共及隐私权。）  
 
 <MyTable :data="data1" />
+
+## 文档格式转换
+### excel转markdown
+[https://tool.lu/tables](https://tool.lu/tables)
+
+### Excel(复制后的无格式纯文本)转Json
+[http://www.bejson.com/json/col2json](http://www.bejson.com/json/col2json)
+
+### JSON转csv、excel
+[https://www.bejson.com/json/json2excel](https://www.bejson.com/json/json2excel)
