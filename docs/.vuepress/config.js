@@ -28,7 +28,9 @@ module.exports = {
                 options: {
                     el: '#valine-vuepress-comment',
                     appId: 'ovEDOqPNCp4iOvSiffKTKH4v-gzGzoHsz',
-                    appKey: 'wiW4pV04wTcAC1bKApBxRdgC'
+                    appKey: 'wiW4pV04wTcAC1bKApBxRdgC',
+                    path:'window.location.pathname',
+                    visitor: true // 阅读量统计
                 }
             }
         ],
@@ -43,7 +45,7 @@ module.exports = {
         repo: 'liziqi001/liziqi001.github.io',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-        repoLabel: 'github',
+        repoLabel: 'GitHub',
         // 假如文档不是放在仓库的根目录下：
         docsDir: 'docs',
         // 假如文档放在一个特定的分支下：
@@ -71,6 +73,10 @@ module.exports = {
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
                             { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' },
                             { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' }
+                        ],
+                        text: '工具库',
+                        items: [
+                            { text: 'axios', link: 'http://www.axios-js.com/zh-cn/docs/#axios-request-config' }
                         ]
                     }
                 ]
@@ -80,7 +86,7 @@ module.exports = {
             { 
                 text: '本站维护', 
                 items:[
-                    {text:'百度统计',link: 'https://tongji.baidu.com/web/10000318855/overview/index?siteId=16281026'},
+                    {text:'百度统计',link: 'https://tongji.baidu.com/web/10000318855/overview/index?siteId=16296916'},
                     {text:'评论数据',link: 'https://console.leancloud.cn/apps/ovEDOqPNCp4iOvSiffKTKH4v-gzGzoHsz/storage/data/Comment?tab=table&env=production'},
                     {text:'自动部署',link: 'https://travis-ci.com/github/liziqi001/liziqi001.github.io'},
                     {text:'接口平台',link: 'http://rap2.taobao.org'},
