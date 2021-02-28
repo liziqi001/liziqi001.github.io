@@ -40,7 +40,7 @@
     <div></div>
     前面四个空格代表代码块
     
-![图片](../.vuepress/public/favicon.png)
+![图片](../.vuepress/public/favicon.png) 
 
 <html>
 <font color=red>用html设置字体颜色</font>
