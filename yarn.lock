@@ -1231,6 +1231,13 @@
   dependencies:
     "@vuepress/shared-utils" "1.6.0"
 
+"@vuepress/plugin-register-components@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npm.taobao.org/@vuepress/plugin-register-components/download/@vuepress/plugin-register-components-1.8.2.tgz#2fb45a68b0a1efb8822670d95c3b231a2d0eb74d"
+  integrity sha1-L7RaaLCh77iCJnDZXDsjGi0Ot00=
+  dependencies:
+    "@vuepress/shared-utils" "1.8.2"
+
 "@vuepress/plugin-search@1.6.0":
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.6.0.tgz#a064f638a8f30485859b871047deaf9194ffc886"
@@ -1240,6 +1247,21 @@
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.6.0.tgz#8bf0c9c4e502bc6f10e70db3b236e816d8165631"
   integrity sha1-i/DJxOUCvG8Q5w2zsjboFtgWVjE=
+  dependencies:
+    chalk "^2.3.2"
+    escape-html "^1.0.3"
+    fs-extra "^7.0.1"
+    globby "^9.2.0"
+    gray-matter "^4.0.1"
+    hash-sum "^1.0.2"
+    semver "^6.0.0"
+    toml "^3.0.0"
+    upath "^1.1.0"
+
+"@vuepress/shared-utils@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.8.2.tgz#5ec1601f2196aca34ad82eed7c9be2d7948f705b"
+  integrity sha1-XsFgHyGWrKNK2C7tfJvi15SPcFs=
   dependencies:
     chalk "^2.3.2"
     escape-html "^1.0.3"

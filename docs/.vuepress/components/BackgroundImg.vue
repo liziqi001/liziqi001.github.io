@@ -1,10 +1,10 @@
 <style scoped>
     .container{
-       position: static;
-       width: 100%;
-       height: 100%;
-       margin: 0;
-
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0.2);
+        /* z-index: 9; */
     }
     
 </style>

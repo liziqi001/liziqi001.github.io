@@ -38,7 +38,12 @@ module.exports = {
         // 'BackgroundImg',
     ],
     plugins: [
-        '<BackgroundImg/>',
+        [
+            '@vuepress/register-components',
+            {
+                componentsDir: './components'
+            }
+        ],
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
@@ -56,7 +61,10 @@ module.exports = {
                 }
             }
         ],
-        "vuepress-plugin-auto-sidebar"
+        "vuepress-plugin-auto-sidebar",
+        ['@vuepress/search', {
+            searchMaxSuggestions: 10
+        }],
     ],
     locales: {
         '/': {
