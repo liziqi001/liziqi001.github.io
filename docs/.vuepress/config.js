@@ -1,9 +1,11 @@
 module.exports = {
     title: '前端代码块',
-    description: 'Just playing around',
+    description: '前端,代码块,liziqi001,liziqi,前端代码块,vuepress,主题,vuepress主题,blog,vuepress-blog',
     // theme: '@vuepress/theme-xxx',
     base: '/',
     head:[
+        ['meta', {name:"baidu-site-verification", content:"code-PUEizRChjl" }],
+        ['meta', { name: 'keywords', content: 'antdocs,antdeisgn,vuepress,vuepress-theme,theme,ant,docs,antd,antdocs of vuepress,主题,vuepress主题,antd设计,blog,vuepress-blog' }],
         ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./public/favicon.ico` }],
         [
             //或者 `<script>var _hmt=...})();</script>`
