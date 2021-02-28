@@ -55,7 +55,7 @@
             }
         },
         mounted() {
-            console.log('table.vue')
+            console.log('MyTable.vue')
 
         },
         methods: {

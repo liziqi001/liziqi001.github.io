@@ -20,6 +20,7 @@ module.exports = {
     plugins: [
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated',
+        '@vuepress/back-to-top',
         [
             'vuepress-plugin-comment',
             {
@@ -73,7 +74,9 @@ module.exports = {
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
                             { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' },
                             { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' }
-                        ],
+                        ]
+                    },
+                    {
                         text: '工具库',
                         items: [
                             { text: 'axios', link: 'http://www.axios-js.com/zh-cn/docs/#axios-request-config' }
@@ -95,7 +98,7 @@ module.exports = {
             { 
                 text: '关于我', 
                 items:[
-                    {text:'我的项目',link: '/myProject.html'},
+                    {text:'我的项目',link: '/project/online.html'},
                     {text:'联系我',link: '/contactMe.html'},
                 ]
             },
