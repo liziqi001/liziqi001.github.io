@@ -1,3 +1,14 @@
+// const setImg=()=>{
+//     let list=[
+//         'https://imglf5.nosdn.127.net/img/MmU4dzhkalUyS3ZaWXY3YzJxejdZNjF5c2t4UFRXTkwxRXNXbUNwdzFSYWpoM3NuSEZxbTF3PT0.jpg?imageView&thumbnail=2664y2000&type=jpg&quality=96&stripmeta=0&type=jpg',
+//         'https://imglf6.nosdn.127.net/img/d0lIKy8yVTQvWlZta1ZLaUIzRFJUMmFQVUI3K1pIamFyOUtya2RHR0Q2eHpSKzZ6bnQySWdBPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg',
+//         'https://lofter.lf127.net/1611802734076/tata.gif?imageView&stripmeta=0&thumbnail=2000x2000&tostatic=0',
+//         'https://lofter.lf127.net/1611802494106/JimmyhE.jpg?imageView&type=jpg&quality=80&stripmeta=0&thumbnail=4000x4000'
+//     ]
+//     let index=Math.floor(Math.random() * list.length)
+//     window.document.getElementsByClassName('theme-container')[0].getElementsByClassName.background=`url(${list[index]})`
+// }
+console.log('config.js')
 module.exports = {
     title: '前端代码块',
     description: '前端,代码块,liziqi001,liziqi,前端代码块,vuepress,主题,vuepress主题,blog,vuepress-blog',
@@ -19,7 +30,15 @@ module.exports = {
             })();`
         ]
     ],
+    async ready() {
+        // ...
+        // setImg()
+    },
+    globalUIComponents: [
+        // 'BackgroundImg',
+    ],
     plugins: [
+        '<BackgroundImg/>',
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
