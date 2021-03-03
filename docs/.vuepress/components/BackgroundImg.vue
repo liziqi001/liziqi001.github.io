@@ -1,15 +1,15 @@
 <style scoped>
     .container{
-        position: fixed;
+        position: absolute;
         width: 100%;
-        height: 100%;
         filter: opacity(0.2);
-        /* z-index: 9; */
+        z-index: 10;
+        pointer-events: none;
     }
     
 </style>
 <template>
-    <div class="container" :style="{background:'url('+list[index]+')'}">
+    <div class="container" :style="{height:height+'px',background:'url('+list[index]+')'}">
         
     </div>
 </template>
@@ -23,8 +23,15 @@
             },
         },
         mounted() {
-            this.index=Math.floor(Math.random() * this.list.length)
-            console.log('ViewImg.vue')
+            console.log('BackgroundImg')
+        },
+        beforeRouteEnter(to,from,next){
+            next(vm => {
+                vm.changeImg()
+                setTimeout(()=>{
+                    vm.height=document.getElementsByClassName('theme-container')[0].offsetHeight
+                },800)
+            });
         },
         data(){
             return{
@@ -35,13 +42,16 @@
                     'https://lofter.lf127.net/1611802494106/JimmyhE.jpg?imageView&type=jpg&quality=80&stripmeta=0&thumbnail=4000x4000'
                 ],
                 index:0,
+                height:1000
             }
         },
         computed:{
 
         },
         methods: {
-           
+           changeImg(){
+               this.index=Math.floor(Math.random() * this.list.length)
+           },
         },
         
     }

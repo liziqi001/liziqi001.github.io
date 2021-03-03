@@ -30,20 +30,17 @@ module.exports = {
             })();`
         ]
     ],
-    async ready() {
-        // ...
-        // setImg()
-    },
     globalUIComponents: [
-        // 'BackgroundImg',
+        'BackgroundImg',
     ],
     plugins: [
-        [
-            '@vuepress/register-components',
-            {
-                componentsDir: './components'
-            }
-        ],
+        // [
+        //     '@vuepress/register-components',
+        //     {
+        //         componentsDir: './components'
+        //     }
+        // ],
+        require('./plugin.js'),
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
