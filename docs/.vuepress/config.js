@@ -1,18 +1,18 @@
 
 const getImg=()=>{
-    // let list=[
-    //     'https://imglf5.nosdn.127.net/img/MmU4dzhkalUyS3ZaWXY3YzJxejdZNjF5c2t4UFRXTkwxRXNXbUNwdzFSYWpoM3NuSEZxbTF3PT0.jpg?imageView&thumbnail=2664y2000&type=jpg&quality=96&stripmeta=0&type=jpg',
-    //     'https://imglf6.nosdn.127.net/img/d0lIKy8yVTQvWlZta1ZLaUIzRFJUMmFQVUI3K1pIamFyOUtya2RHR0Q2eHpSKzZ6bnQySWdBPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg',
-    //     'https://lofter.lf127.net/1611802734076/tata.gif?imageView&stripmeta=0&thumbnail=2000x2000&tostatic=0',
-    //     'https://lofter.lf127.net/1611802494106/JimmyhE.jpg?imageView&type=jpg&quality=80&stripmeta=0&thumbnail=4000x4000'
-    // ]
-    // let index= Math.floor(Math.random() * list.length)
-    // return list[index]
-    import('axios').then(module => {
-      module.default.get('https://v1.alapi.cn/api/acg').then(res=>{
-          return res.data
-      }).catch(err=>console.log(err))
-    })
+    let list=[
+        'http://img.netbian.com/file/2017/0306/40e2d32a8f9151ed26a4edc19e38a145.gif',
+        'http://img.netbian.com/file/20130418/4687ef6ce22285458a2375798bf0faaa.jpg',
+        'http://img.netbian.com/file/2015/1111/23ae150fed1d9068495cedc0ec0a4003.jpg',
+        'http://img.netbian.com/file/20150407/a9c7c5e8934d0ab39a0325c48c37fe41.jpg'
+    ]
+    let index= Math.floor(Math.random() * list.length)
+    return list[index]
+    // import('axios').then(module => {
+    //   module.default.post('https://v1.alapi.cn/api/acg',{format:'json'}).then(res=>{
+    //       return res.data.url
+    //   }).catch(err=>console.log(err))
+    // })
     // window.document.getElementsByClassName('theme-container')[0].getElementsByClassName.background=`url(${list[index]})`
 }
 module.exports = {
