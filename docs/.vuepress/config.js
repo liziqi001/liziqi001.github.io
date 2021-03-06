@@ -1,10 +1,16 @@
 
 const getImg=()=>{
+    // let list=[
+    //     'http://img.netbian.com/file/2017/0306/40e2d32a8f9151ed26a4edc19e38a145.gif',
+    //     'http://img.netbian.com/file/20130418/4687ef6ce22285458a2375798bf0faaa.jpg',
+    //     'http://img.netbian.com/file/2015/1111/23ae150fed1d9068495cedc0ec0a4003.jpg',
+    //     'http://img.netbian.com/file/20150407/a9c7c5e8934d0ab39a0325c48c37fe41.jpg'
+    // ]
     let list=[
-        require('http://img.netbian.com/file/2017/0306/40e2d32a8f9151ed26a4edc19e38a145.gif'),
-        'http://img.netbian.com/file/20130418/4687ef6ce22285458a2375798bf0faaa.jpg',
-        'http://img.netbian.com/file/2015/1111/23ae150fed1d9068495cedc0ec0a4003.jpg',
-        'http://img.netbian.com/file/20150407/a9c7c5e8934d0ab39a0325c48c37fe41.jpg'
+        '/background/1.gif',
+        '/background/2.jpg',
+        '/background/3.jpg',
+        '/background/4.jpg',
     ]
     let index= Math.floor(Math.random() * list.length)
     return list[index]
@@ -50,7 +56,7 @@ module.exports = {
         $page.url = url
     },
     plugins: [
-        './plugin.js',
+        // './plugin.js',
         ['vuepress-plugin-code-copy', true],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
