@@ -69,7 +69,7 @@ module.exports = {
                     el: '#valine-vuepress-comment',
                     appId: 'ovEDOqPNCp4iOvSiffKTKH4v-gzGzoHsz',
                     appKey: 'wiW4pV04wTcAC1bKApBxRdgC',
-                    path:window.location.pathname,
+                    path:'<%- window.location.pathname %>',
                     visitor: true // 阅读量统计
                 }
             }

@@ -60,3 +60,8 @@ CC0协议意味着创作者主动放弃了著作的所有权利，可以无条�
 
 ### JSON转csv、excel
 [https://www.bejson.com/json/json2excel](https://www.bejson.com/json/json2excel)
+
+## 图片处理
+### 压缩
+[https://docsmall.com/image-compress](https://docsmall.com/image-compress)  
+[https://www.picdiet.com/zh-cn](https://www.picdiet.com/zh-cn)
