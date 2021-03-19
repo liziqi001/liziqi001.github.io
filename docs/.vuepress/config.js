@@ -69,12 +69,26 @@ module.exports = {
                     el: '#valine-vuepress-comment',
                     appId: 'ovEDOqPNCp4iOvSiffKTKH4v-gzGzoHsz',
                     appKey: 'wiW4pV04wTcAC1bKApBxRdgC',
-                    path:'window.location.pathname',
+                    path:'<%- window.location.pathname %>',
                     visitor: true // 阅读量统计
                 }
             }
         ],
-        "vuepress-plugin-auto-sidebar",
+        [
+            "vuepress-plugin-auto-sidebar",
+            {
+                titleMode: "titlecase", // 标题模式
+                collapsable: true,     // 设置为true,开启折叠
+                // sidebarDepth: 0,    // 标题的深度
+                collapseList: [
+                // 折叠的路由列表
+                // "/frontend/css/"
+                ],
+                uncollapseList: [
+                // 不折叠的路由列表
+                ]
+            }
+        ],
         ['@vuepress/search', {
             searchMaxSuggestions: 10
         }],

@@ -29,7 +29,7 @@
 </style>
 <template>
     <span>
-        <div class="container"  :style="{filter:'opacity('+opacity/100+')',background:'url('+$page.url+')'}">
+        <div class="container"  :style="{filter:'opacity('+opacity/100+')',background:'url('+$page.url+')', backgroundSize: 'cover'}">
         </div>
         <el-slider
             class="slider"
@@ -44,8 +44,8 @@
         <el-switch
             class="switch"
             v-model="showMusic"
-            active-text="歌单"
-            inactive-text="隐藏">
+            active-text="Music"
+        >
         </el-switch>
         <iframe v-show="showMusic" frameborder="no" border="0" marginwidth="0" marginheight="0" width=294 height=440 src="//music.163.com/outchain/player?type=0&id=377079922&auto=1&height=430"></iframe>
     </span>
@@ -70,8 +70,8 @@ import { url } from '@dynamic/constants'
         },
         data(){
             return{
-                showMusic:true,
-                opacity: 15,
+                showMusic:false,
+                opacity: 10,
                 // list:[
                 //     'https://imglf5.nosdn.127.net/img/MmU4dzhkalUyS3ZaWXY3YzJxejdZNjF5c2t4UFRXTkwxRXNXbUNwdzFSYWpoM3NuSEZxbTF3PT0.jpg?imageView&thumbnail=2664y2000&type=jpg&quality=96&stripmeta=0&type=jpg',
                 //     'https://imglf6.nosdn.127.net/img/d0lIKy8yVTQvWlZta1ZLaUIzRFJUMmFQVUI3K1pIamFyOUtya2RHR0Q2eHpSKzZ6bnQySWdBPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg',

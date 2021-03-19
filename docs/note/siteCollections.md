@@ -51,7 +51,7 @@ CC0协议意味着创作者主动放弃了著作的所有权利，可以无条�
 
 <MyTable :data="data1" />
 
-## 文档格式转换
+## 文档处理
 ### excel转markdown
 [https://tool.lu/tables](https://tool.lu/tables)
 
@@ -60,3 +60,11 @@ CC0协议意味着创作者主动放弃了著作的所有权利，可以无条�
 
 ### JSON转csv、excel
 [https://www.bejson.com/json/json2excel](https://www.bejson.com/json/json2excel)
+### 文本对比
+[http://tools.jb51.net/aideddesign/txt_diff#diff](http://tools.jb51.net/aideddesign/txt_diff#diff)
+### 文本去重
+[http://tools.jb51.net/aideddesign/txt_quchong](http://tools.jb51.net/aideddesign/txt_quchong)
+## 图片处理
+### 压缩
+[https://docsmall.com/image-compress](https://docsmall.com/image-compress)  
+[https://www.picdiet.com/zh-cn](https://www.picdiet.com/zh-cn)
