@@ -111,6 +111,14 @@ module.exports = {
                 text: '官方文档',
                 items: [
                     {
+                        text: 'vue',
+                        items: [
+                            { text: 'vue3.x', link: 'https://cn.vuejs.org/v2/api/' },
+                            { text: 'Vuex', link: 'https://vuex.vuejs.org/zh/guide/mutations.html' },
+                            { text: 'Vue Router', link: 'https://router.vuejs.org/zh/guide/essentials/redirect-and-alias.html#%E9%87%8D%E5%AE%9A%E5%90%91' },
+                        ]
+                    },
+                    {
                         text: 'ui库',
                         items: [
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
