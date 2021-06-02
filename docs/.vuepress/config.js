@@ -137,7 +137,9 @@ module.exports = {
                         items: [
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
                             { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' },
-                            { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' }
+                            { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' },
+                            { text: 'uView', link: 'https://www.uviewui.com/components/button.html' },
+                            { text: 'vant', link: 'https://vant-contrib.gitee.io/vant/#/zh-CN' },
                         ]
                     },
                     {
