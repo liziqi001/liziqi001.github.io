@@ -1,4 +1,4 @@
-<style scoped>
+<style lang="stylus" scoped>
     .container{
         position: fixed;
         width: 100%;
@@ -19,11 +19,15 @@
         top:calc(30% + 450px);
         z-index: 11;
     }
-    iframe{
+    .iframe{
         position: fixed;
         right:5px;
         top:30%;
         z-index: 11;
+        .control{
+            display: flex;
+            justify-content: space-around;
+        }
     }
     
 </style>
@@ -47,7 +51,15 @@
             active-text="Music"
         >
         </el-switch>
-        <iframe v-show="showMusic" frameborder="no" border="0" marginwidth="0" marginheight="0" width=294 height=440 src="//music.163.com/outchain/player?type=0&id=377079922&auto=1&height=430"></iframe>
+        <!-- <iframe v-show="showMusic" frameborder="no" border="0" marginwidth="0" marginheight="0" width=294 height=440 src="//music.163.com/outchain/player?type=0&id=377079922&auto=1&height=430"></iframe> -->
+        <div v-show="showMusic" class="iframe">
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 :src="musics[playIndex].url"></iframe>
+            <div class="control">
+                <el-link :disabled="playIndex==0" @click="changeMusic('before')">上一首</el-link>
+                <el-link :disabled="playIndex==musics.length-1" @click="changeMusic('after')">下一首</el-link>
+            </div>
+        </div>
+
     </span>
 </template>
 
@@ -71,6 +83,13 @@ import { url } from '@dynamic/constants'
         data(){
             return{
                 showMusic:false,
+                musics:[
+                    {name:'爱的可能-叶倩文',url:'//music.163.com/outchain/player?type=2&id=1829151419&auto=1&height=66'},
+                    {name:'明天你好-李成宇',url:'//music.163.com/outchain/player?type=2&id=33955178&auto=1&height=66'},
+                    {name:'恋人心-若菲飞',url:'//music.163.com/outchain/player?type=2&id=421110129&auto=1&height=66'},
+                    {name:'化身孤岛的鲸-不才',url:'//music.163.com/outchain/player?type=2&id=448184048&auto=1&height=66'},
+                ],
+                playIndex:0,
                 opacity: 10,
                 // list:[
                 //     'https://imglf5.nosdn.127.net/img/MmU4dzhkalUyS3ZaWXY3YzJxejdZNjF5c2t4UFRXTkwxRXNXbUNwdzFSYWpoM3NuSEZxbTF3PT0.jpg?imageView&thumbnail=2664y2000&type=jpg&quality=96&stripmeta=0&type=jpg',
@@ -84,9 +103,20 @@ import { url } from '@dynamic/constants'
 
         },
         methods: {
-           changeImg(){
-               this.index=Math.floor(Math.random() * this.list.length)
-           },
+            changeMusic(type){
+                if(type=='after'){
+                    if(this.playIndex<this.musics.length-1){
+                        this.playIndex+=1
+                    }
+                }else{
+                    if(this.playIndex>0){
+                        this.playIndex-=1
+                    }
+                }
+            },
+            changeImg(){
+                this.index=Math.floor(Math.random() * this.list.length)
+            },
         },
         
     }

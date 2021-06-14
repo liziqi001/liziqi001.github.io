@@ -90,7 +90,8 @@ module.exports = {
             }
         ],
         ['@vuepress/search', {
-            searchMaxSuggestions: 10
+            searchMaxSuggestions: 10,
+            searchPlaceholder :'查找到三级标题'
         }],
     ],
     locales: {
