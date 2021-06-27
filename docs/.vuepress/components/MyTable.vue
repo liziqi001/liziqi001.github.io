@@ -1,11 +1,5 @@
 <style lang="stylus" scoped>
-    .container{
-        >>>table{
-            margin:0;
-            display:'';
-        }
-    }
-    
+
     
 </style>
 <template>
@@ -19,10 +13,12 @@
                     :prop="item.label" 
                     :label="item.label" 
                     align="center"
-                    :width="item.width>450?450:item.width"
+                    :width="item.width>450?450:item.width<80?80:item.width"
                     :show-overflow-tooltip="item.width>200?true:false"
                 >
-                
+                    <template slot="header" slot-scope="scope">
+                        <span :title="scope.column.label">{{scope.column.label.length>4?scope.column.label.substr(0,4)+'...':scope.column.label}}</span> 
+                    </template>
                     <template slot-scope="scope" >
                         <span v-if="html" v-html="scope.row[item.label]"></span> 
                         <span v-else>{{scope.row[item.label]}}</span> 
@@ -70,7 +66,6 @@
 
         },
         methods: {
-           
            
         },
         watch:{

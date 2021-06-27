@@ -87,7 +87,7 @@ import { url } from '@dynamic/constants'
                     {name:'爱的可能',url:'//music.163.com/outchain/player?type=2&id=309615&auto=1&height=66'},
                     {name:'明天你好',url:'//music.163.com/outchain/player?type=2&id=1814698486&auto=1&height=66'},
                     {name:'恋人心',url:'//music.163.com/outchain/player?type=2&id=421110129&auto=1&height=66'},//备用 //music.163.com/outchain/player?type=2&id=1386977095&auto=1&height=66
-                    {name:'化身孤岛的鲸-不才',url:'//music.163.com/outchain/player?type=2&id=1409607433&auto=1&height=66'},
+                    {name:'化身孤岛的鲸',url:'//music.163.com/outchain/player?type=2&id=1409607433&auto=1&height=66'},
                 ],
                 playIndex:0,
                 opacity: 10,
