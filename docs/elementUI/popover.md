@@ -6,7 +6,7 @@ title: popover
 ### 弹出二维码
 ![An image](../.vuepress/public/popover.png)
 
-``` vue
+``` markdown
 <template> 
     <el-popover
         placement="bottom"
