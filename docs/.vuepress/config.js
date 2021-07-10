@@ -134,6 +134,13 @@ module.exports = {
                         ]
                     },
                     {
+                        text: '框架',
+                        items: [
+                            { text: 'uniapp', link: 'https://uniapp.dcloud.io/collocation/pages?id=easycom' },
+                            
+                        ]
+                    },
+                    {
                         text: 'ui库',
                         items: [
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
