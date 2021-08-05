@@ -128,6 +128,7 @@ module.exports = {
                         text: 'vue',
                         items: [
                             { text: 'vue3.x', link: 'https://cn.vuejs.org/v2/api/' },
+                            { text: 'vue cli', link: 'https://cli.vuejs.org/zh/guide/installation.html' },
                             { text: 'Vuex', link: 'https://vuex.vuejs.org/zh/guide/mutations.html' },
                             { text: 'Vue Router', link: 'https://router.vuejs.org/zh/guide/essentials/redirect-and-alias.html#%E9%87%8D%E5%AE%9A%E5%90%91' },
                         ]
