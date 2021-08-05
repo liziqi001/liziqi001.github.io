@@ -58,3 +58,12 @@ this.$refs['storeForm'].validate((valid) => {
 this.$refs['storeForm'].validateField('cover')//string|array
 ```
 外层rules和内部标签rule 验证叠加
+### 解决多选下拉 首次进页面就会触发校验问题
+设置初始值为空数组即可
+``` js
+{
+    xxx : [
+	{required: true, message: '请下拉选择', trigger: 'change'}
+    ]
+}
+```

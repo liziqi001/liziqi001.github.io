@@ -4,7 +4,7 @@
 
 ## excel文件处理 
 > 框架: vue  
-UI: element-ui
+UI: view-design(iview)
 
 ![An image](../.vuepress/public/myProject/excel.png)
 [http://01f6f3.coding-pages.com/dist/](http://01f6f3.coding-pages.com/dist/)

@@ -90,7 +90,8 @@ module.exports = {
             }
         ],
         ['@vuepress/search', {
-            searchMaxSuggestions: 10
+            searchMaxSuggestions: 10,
+            searchPlaceholder :'查找到三级标题'
         }],
     ],
     locales: {
@@ -134,11 +135,20 @@ module.exports = {
                         ]
                     },
                     {
+                        text: '框架',
+                        items: [
+                            { text: 'uniapp', link: 'https://uniapp.dcloud.io/collocation/pages?id=easycom' },
+                            
+                        ]
+                    },
+                    {
                         text: 'ui库',
                         items: [
                             { text: 'elementUI', link: 'https://element.eleme.io/#/zh-CN/component/button' },
                             { text: 'echarts', link: 'https://echarts.apache.org/examples/zh/index.html' },
-                            { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' }
+                            { text: 'Mint UI', link: 'http://mint-ui.github.io/#!/zh-cn' },
+                            { text: 'uView', link: 'https://www.uviewui.com/components/button.html' },
+                            { text: 'vant', link: 'https://vant-contrib.gitee.io/vant/#/zh-CN' },
                         ]
                     },
                     {
