@@ -129,8 +129,8 @@ module.exports = {
                         text: 'vue',
                         items: [
                             { text: 'vue3.x', link: 'https://cn.vuejs.org/v2/api/' },
-                            { text: 'vue cli', link: 'https://cli.vuejs.org/zh/guide/installation.html' },
                             { text: 'Vuex', link: 'https://vuex.vuejs.org/zh/guide/mutations.html' },
+                            { text: 'vue cli', link: 'https://cli.vuejs.org/zh/guide/installation.html' },
                             { text: 'Vue Router', link: 'https://router.vuejs.org/zh/guide/essentials/redirect-and-alias.html#%E9%87%8D%E5%AE%9A%E5%90%91' },
                         ]
                     },
@@ -138,7 +138,7 @@ module.exports = {
                         text: '框架',
                         items: [
                             { text: 'uniapp', link: 'https://uniapp.dcloud.io/collocation/pages?id=easycom' },
-                            
+                            { text: '微信小程序', link: 'https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.disableAlertBeforeUnload.html' },
                         ]
                     },
                     {
