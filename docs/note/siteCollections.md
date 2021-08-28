@@ -51,7 +51,7 @@ CC0协议意味着创作者主动放弃了著作的所有权利，可以无条�
 
 <MyTable :data="data1" />
 
-## 文档处理
+## 文档内容处理
 ### excel转markdown
 [https://tool.lu/tables](https://tool.lu/tables)
 
@@ -64,6 +64,11 @@ CC0协议意味着创作者主动放弃了著作的所有权利，可以无条�
 [http://tools.jb51.net/aideddesign/txt_diff#diff](http://tools.jb51.net/aideddesign/txt_diff#diff)
 ### 文本去重
 [http://tools.jb51.net/aideddesign/txt_quchong](http://tools.jb51.net/aideddesign/txt_quchong)
+
+## 文件格式转换
+### pdf转word
+迅捷PDF转换器[http://app.xunjiepdf.com/pdf2word/](http://app.xunjiepdf.com/pdf2word/)  
+转换模式选择：尽量保持排版OCR 错误更少
 ## 图片处理
 ### 压缩
 [https://docsmall.com/image-compress](https://docsmall.com/image-compress)  
