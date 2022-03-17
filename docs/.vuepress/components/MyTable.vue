@@ -73,7 +73,7 @@
                 handler:function(){
                     this.$nextTick(()=>{
                         console.log('更新表格',this)
-                        this.$refs.table.doLayout();
+                        this.$refs.table&&this.$refs.table.doLayout();
                     })
                 },
                 immediate:true
