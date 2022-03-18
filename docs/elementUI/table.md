@@ -112,3 +112,41 @@ setTimeout(() => {
     })
 }, 300)
 ```
+## 全选效果
+``` html
+<el-checkbox v-model="checkAll" @change="doCheckAll">全选</el-checkbox>
+<el-table ref="table" id="myTable" :data="tableData" height="400" border stripe 				@selection-change="selectChange" :header-cell-style="{ background: '#F5F5F5' }">
+	<el-table-column type="selection" width="55"></el-table-column>
+	<el-table-column prop="organName" label="片区名称"></el-table-column>
+</el-table>
+```
+``` js
+doCheckAll(val){
+	let elSelectAll=document.querySelectorAll('#myTable .el-table-column--selection')
+	// let list=document.querySelectorAll('#myTable input[type="checkbox"]')
+	if(this.$refs.table&&elSelectAll){
+		this.$refs.table.clearSelection()
+		if(val){
+			this.$refs.table.toggleAllSelection()
+			for(let i of elSelectAll){
+				// i.setAttribute('disabled', 'disabled');
+				i.style.pointerEvents='none'
+			}
+		}else{
+			for(let i of elSelectAll){
+				i.style.pointerEvents=''
+			}
+		}
+	}
+},
+//翻页后全选表格
+getTableData(){
+	this.$api.drugService_queryPost(p).then(res =>{
+		this.tableData = res.rows
+		this.total = res.total || 0
+		this.$nextTick(()=>{
+			this.doCheckAll(this.checkAll)
+		})
+	})
+},
+```
