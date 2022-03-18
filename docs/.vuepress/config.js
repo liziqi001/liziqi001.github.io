@@ -11,6 +11,11 @@ const getImg=()=>{
         '/background/2.jpg',
         '/background/3.jpg',
         '/background/4.jpg',
+        '/girl/1.jpg',
+        '/girl/2.jpg',
+        '/girl/3.jpg',
+        '/girl/4.jpg',
+        '/1.gif',
     ]
     let index= Math.floor(Math.random() * list.length)
     return list[index]
