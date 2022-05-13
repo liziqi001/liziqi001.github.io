@@ -33,7 +33,7 @@
 </style>
 <template>
     <span>
-        <div class="container" v-show="false" :style="{filter:'opacity('+opacity/100+')',background:'url('+$page.url+')', backgroundSize: 'cover'}">
+        <div class="container" v-show="true" :style="{filter:'opacity('+opacity/100+')',background:'url('+$page.url+')', backgroundSize: 'cover'}">
         </div>
         <el-slider
             class="slider"
